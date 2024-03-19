@@ -1,13 +1,286 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+
+	<link rel="icon" type="image/png"
+		href="https://cdn.iconscout.com/icon/free/png-512/free-portfolio-carry-office-bag-briefcase-luggage-suitcase-4-5377.png?f=webp&w=256">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<title>Varad Portfolio</title>
 </head>
+
 <body>
-	<h1>Hello World!</h1>
-	<h1>Varad Karyakarte</h1>
-	<h1>Github Portfolio</h1>
+
+
+	<!-- nav starts here -->
+	<div class="navigation-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#"><span class="brand tracking-in-expand">Varad</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home"><span class="navmenu">Home</span><span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about"><span class="navmenu">About</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills"><span class="navmenu">Skills</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects"><span class="navmenu">Projects</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</div>
+	<!-- nav ends here -->
+
+	<div class="main-container">
+
+		<!-- Home Section -->
+		<section id="home" class="portfolio-sections home-section">
+			<div id="home-info">
+				<span class="info"> Hii </span> <br>
+				<span class="info"> My Name is </span><br>
+				<span class="brand myname"> Varad </span><br>
+				<span class="info"> I am a<span class="desig"> Full Stack Developer </span></span><br>
+				<button href="demo.pdf" class="rsmbtn">RESUME</button>
+			</div>
+		</section>
+
+		<section id="about" class="portfolio-sections about-section">
+			<div class="aboutmain">
+				<div class="divimg">
+					<img class="myimg"
+						src="https://www.pngitem.com/pimgs/m/129-1292325_charlie-cox-matt-murdock-suit-hd-png-download.png"
+						height="350px" alt="">
+				</div>
+				<div class="carrerobj">
+					<h1 class="heading">ABOUT</h1>
+					<p class="carrerinfo">To secure a challenging role within an organization
+						where I can leverage my knowledge and skills to contribute to the company's growth
+						and enhance my professional development.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="portfolio-sections skills-section">
+			<h1 class="heading">SKILLS</h1>
+			<table class="tbl" height="450px" width="90%" cellspacing="50px">
+				<tr align="center" valign="top">
+					<div class="borderskills">
+						<td data-aos="slide-right">
+							<h2 class="skills-subheading">Languages</h2>
+							<p class="detailedSkills">
+								Core Java, C, C++, Python, C#, JavaScript, HTML, CSS, SQL, PHP.
+							</p>
+						</td>
+					</div>
+					<div class="borderskills">
+						<td data-aos="slide-left">
+							<h2 class="skills-subheading">API's & Frameworks</h2>
+							<p class="detailedSkills">
+								Collections, Streams API, RestAPI, Spring, Hibernates, Servelets,
+								JDBC, SpringBoot, Spring MVC, JSP, ReactJS.
+							</p>
+						</td>
+					</div>
+				</tr>
+
+				<tr align="center" valign="top">
+					<div class="borderskills">
+						<td data-aos="slide-right">
+							<h2 class="skills-subheading">Tools</h2>
+							<p class="detailedSkills">
+								VS Code, Eclipse IDE, Netbeans, Git, Github, MySql Workbench,
+								Maven, Tomcat, MongoDB, Android Studio.
+							</p>
+						</td>
+					</div>
+					<div class="borderskills">
+						<td data-aos="slide-left">
+							<h2 class="skills-subheading">Operating Systems</h2>
+							<p class="detailedSkills">
+								Windows, Android, IOS, Linux, Ubuntu.
+							</p>
+						</td>
+					</div>
+				</tr>
+			</table>
+		</section>
+
+		<section id="projects" class="portfolio-sections project-section">
+			<h1 class="heading">PROJECTS</h1>
+			<div class="card-cantainer">
+				<div class="card-deck">
+					<div class="card" data-aos="flip-down">
+						<img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=740&t=st=1710688584~exp=1710689184~hmac=e1a935688f06700f1ab9b17b5c01d46b3a59557d496647284a6785294435fd18"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Smart Hospital</h5>
+							<p class="card-text">Project on <span class="detailedSkills">"Smart Hospital"</span>
+								using <span class="detailedSkills">Java And MySql</span> for
+								database. Developed a
+								comprehensive hospital management system using Java and MySQL. Managed patient
+								records, doctor details, and
+								staff information. Implemented billing functionality for patients.</p>
+						</div>
+					</div>
+					<div class="card" data-aos="flip-up">
+						<img src="https://www.ishinfo.com/images/examination2.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Online Exam System</h5>
+							<p class="card-text">Project on <span class="detailedSkills">"Online Exam System"</span>
+								using <span class="detailedSkills">PHP, MySql(Xampp) </span> Designed and built
+								an online examination system
+								with separate student and admin modules. Admins can create and manage exams, while
+								students can take exams</p>
+						</div>
+					</div>
+					<div class="card" data-aos="flip-down">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+								additional content. This card has even longer content than the first to show that equal
+								height action.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contact" class="portfolio-sections">
+			<h1 class="heading">CONTACT</h1>
+			<div class="contact-container">
+				<div class="contact-child">
+					<ul class="contact-info" type="none">
+						<li>varadkarykarte187@gmail.com</li>
+						<li>9876543210</li>
+						<li><a href="#">varad/github</a></li>
+						<li>varad/Linkden</li>
+						<li>Pune, Maharashtra.</li>
+					</ul>
+				</div>
+				<div class="contact-child contact-form">
+					<form>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">comment</label>
+								<textarea class="form-control" id="exampleInputPassword1">
+							  </textarea>
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</form>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="footer">
+			<h1 id="footer-info">MADE BY ©VARAD 2024</h1>
+		</section>
+	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1500
+		});
+	</script>
 </body>
+
 </html>
+
+<!-- <div class="row row-cols-1 row-cols-md-2">
+	<div class="col mb-4">
+		data-aos="flip-down"
+		<div class="card" data-aos="flip-down">
+			<img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg?w=740&t=st=1710688584~exp=1710689184~hmac=e1a935688f06700f1ab9b17b5c01d46b3a59557d496647284a6785294435fd18"
+				class="card-img-top" height="250px" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Smart Hospital</h5>
+				<p class="card-text">Project on <span class="detailedSkills">"Smart Hospital"</span>
+					using <span class="detailedSkills">Java And MySql</span> for
+					database. Developed a
+					comprehensive hospital management system using Java and MySQL. Managed patient
+					records, doctor details, and
+					staff information. Implemented billing functionality for patients.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4">
+		<div class="card" data-aos="flip-up">
+			<img src="https://www.ishinfo.com/images/examination2.png" height="250px"
+				class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Online Exam System</h5>
+				<p class="card-text">Project on <span class="detailedSkills">"Online Exam System"</span>
+					using <span class="detailedSkills">PHP, MySql(Xampp) </span> Designed and built
+					an online examination system
+					with separate student and admin modules. Admins can create and manage exams, while
+					students can take exams</p>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4">
+		<div class="card">
+			<img src="..." class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a longer card with supporting text below as a natural
+					lead-in to additional content.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4">
+		<div class="card">
+			<img src="..." class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a longer card with supporting text below as a natural
+					lead-in to additional content. This content is a little bit longer.</p>
+			</div>
+		</div>
+	</div>
+</div> -->

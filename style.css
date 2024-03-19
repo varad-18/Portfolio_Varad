@@ -1,0 +1,345 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.portfolio-sections {
+	margin-top: 50px;
+	/* height: 400px; */
+	width: 100%;
+	/* border: 2px solid black; */
+	background-color: white;
+}
+
+.navigation-bar {
+	background-color: lightcyan;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*background-color: transparent;*/
+	backdrop-filter: blur(10px);
+	z-index: 1;
+
+}
+
+.portfolio-sections h1 {
+	margin-top: 50px;
+}
+
+.main-container {
+	position: relative;
+	top: 75px;
+}
+
+.brand {
+	font-size: 40px;
+	font-family: Arial Black;
+	font-variant: small-caps;
+	color: darkcyan;
+}
+
+.navmenu {
+	color: black;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	padding-left: 15px;
+}
+
+.navmenu:hover {
+	text-decoration: underline 2px solid black;
+	text-underline-offset: 6px;
+	transition-duration: 2s;
+}
+
+.home-section {
+	height: 500px;
+	width: 100%;
+}
+
+
+#home {
+	background-image: url("https://miro.medium.com/v2/resize:fit:640/format:webp/1*ZSVmWGcc1weENb0ShawWxw.gif");
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: 90% 20%;
+	/*margin-bottom: 100px;*/
+	border: none;
+
+}
+
+#home-info {
+	position: absolute;
+	top: 20px;
+	width: 400px;
+	font-size: 25px;
+	margin-top: 25px;
+	margin-left: 60px;
+}
+
+.info {
+	font-weight: bolder;
+
+}
+
+.desig {
+	font-size: 30px;
+	color: crimson;
+	font-weight: bolder;
+}
+
+.rsmbtn {
+	height: 50px;
+	width: 100px;
+	border: none;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bolder;
+	background-color: skyblue;
+	color: white;
+	transition-duration: 1s;
+}
+
+.rsmbtn:hover {
+	background-color: white;
+	color: skyblue;
+	border: 3px solid skyblue;
+	transform: scale(1.1);
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0.6;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0.6;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/*About Section starts here: */
+
+.about-section {
+	height: 500px;
+	width: 100%;
+	background-color: whitesmoke;
+	border: none;
+}
+
+.aboutmain {
+	height: 500px;
+	width: 100%;
+	display: flex;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+
+.aboutmain div {
+	height: 500px;
+	width: 50%;
+}
+
+.myimg {
+	margin-top: 100px;
+	margin-left: 90px;
+	animation-duration: 4s;
+	animation-name: zoom;
+	animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+	100% {
+		transform: scale(1.2);
+		border-radius: 60px;
+	}
+}
+
+.heading {
+	font-family: Arial black;
+	text-align: center;
+	margin: 30px 0;
+	font-size: 40px;
+	color: crimson;
+}
+
+.carrerobj {
+	padding: 30px;
+}
+
+.carrerinfo {
+	text-align: justify;
+	line-height: 40px;
+	text-indent: 100px;
+	margin-right: 30px;
+}
+
+/* Skills Section Starts Here: */
+
+#skills {
+	height: 660px;
+	width: 100%;
+	background-color: white;
+}
+
+.tbl {
+	margin-left: 5%;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.tbl tr td {
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px grey;
+	transition-duration: 1.5s;
+}
+
+.skills-subheading {
+	text-align: center;
+	color: darkcyan;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+	font-variant: small-caps;
+}
+
+.detailedSkills {
+	font-size: 20px;
+	font-weight: bolder;
+	color: brown;
+	line-height: 40px;
+	word-spacing: 3px;
+	margin-top: 20px;
+}
+
+/* Project Section Starts Here */
+#projects {
+	height: 800px;
+	width: 100%;
+	padding: 10px;
+}
+
+.card-container {
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.card-title:hover {
+	text-decoration: underline 2px royalblue;
+	text-underline-offset: 5px;
+	cursor: pointer;
+}
+
+/* .card:hover {
+	transform: scale(1.1);
+	box-shadow: grey;
+} */
+
+.card-title {
+	text-align: center;
+	color: royalblue;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 30px;
+	font-variant: small-caps;
+}
+
+.card-text {
+	text-align: justify;
+	font-size: 18px;
+}
+
+/* Contact-Section */
+#contact {
+	height: 500px;
+	width: 100%;
+	background-color: whitesmoke;
+	padding: 20px;
+}
+
+.contact-container {
+	height: 400px;
+	width: 80%;
+	display: flex;
+	margin-left: 10%;
+}
+
+.contact-child {
+	height: 400px;
+	width: 50%;
+}
+
+.contact-info {
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-top: 70px;
+}
+
+.contact-info li{
+	margin-top: 10px;
+}
+
+.contact-form{
+	padding: 15px;
+	padding-left: 70px;
+	margin-top: 50px;
+}
+
+#footer{
+	height: 50px;
+	width: 100%;
+	background-color: darkcyan;
+	text-align: center;
+}
+
+#footer-info{
+	font-size: 20px;
+	line-height: 50px;
+	color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*DareDevil Gif:
+https://33.media.tumblr.com/16fb0e018bf9ff363af352b06eab0759/tumblr_nvtawzd1wc1uwl6nzo1_500.gif*/
