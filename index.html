@@ -53,6 +53,9 @@
 						<a class="nav-link" href="#projects"><span class="navmenu">Projects</span></a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#qualification"><span class="navmenu">Qualification</span></a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
 					</li>
 				</ul>
@@ -71,71 +74,63 @@
 				<span class="info"> My Name is </span><br>
 				<span class="brand myname"> Varad </span><br>
 				<span class="info"> I am a<span class="desig"> Full Stack Developer </span></span><br>
-				<button href="demo.pdf" class="rsmbtn">RESUME</button>
+				<button class="rsmbtn" onclick="openResume()">RESUME</button>
+
 			</div>
 		</section>
 
 		<section id="about" class="portfolio-sections about-section">
-			<div class="aboutmain">
-				<div class="divimg">
+			<div class="about-container">
+				<div class="about-image">
 					<img class="myimg"
-						src="https://www.pngitem.com/pimgs/m/129-1292325_charlie-cox-matt-murdock-suit-hd-png-download.png"
-						height="350px" alt="">
+						src="https://33.media.tumblr.com/16fb0e018bf9ff363af352b06eab0759/tumblr_nvtawzd1wc1uwl6nzo1_500.gif"
+						alt="
+						Your Image">
 				</div>
-				<div class="carrerobj">
+				<div class="about-info">
 					<h1 class="heading">ABOUT</h1>
-					<p class="carrerinfo">To secure a challenging role within an organization
-						where I can leverage my knowledge and skills to contribute to the company's growth
-						and enhance my professional development.
+					<p class="carrerobj">To secure a challenging role within an organization where I can leverage my
+						knowledge and skills to contribute to the company's growth and enhance my professional
+						development.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="skills" class="portfolio-sections skills-section">
+			<h1 class="heading">SKILLS</h1>
+			<div class="skill-categories">
+				<div class="skill-category" data-aos="slide-left">
+					<h2 class="skills-subheading">Languages</h2>
+					<p class="detailedSkills">
+						Core Java, C, C++, Python, C#, JavaScript, HTML, CSS, SQL, PHP.
+					</p>
+				</div>
+				<div class="skill-category" data-aos="slide-right">
+					<h2 class="skills-subheading">API's & Frameworks</h2>
+					<p class="detailedSkills">
+						Collections, Streams API, RestAPI, Spring, Hibernate, Servlets,
+						JDBC, SpringBoot, Spring MVC, JSP, ReactJS.
+					</p>
+				</div>
+				<div class="skill-category" data-aos="slide-left">
+					<h2 class="skills-subheading">Tools</h2>
+					<p class="detailedSkills">
+						VS Code, Eclipse IDE, Netbeans, Git, GitHub, MySQL Workbench,
+						Maven, Tomcat, MongoDB, Android Studio.
+					</p>
+				</div>
+				<div class="skill-category" data-aos="slide-right">
+					<h2 class="skills-subheading">Operating Systems</h2>
+					<p class="detailedSkills">
+						Windows, Android, iOS, Linux, Ubuntu.
 					</p>
 				</div>
 			</div>
 		</section>
 
-		<section id="skills" class="portfolio-sections skills-section">
-			<h1 class="heading">SKILLS</h1>
-			<table class="tbl" height="450px" width="90%" cellspacing="50px">
-				<tr align="center" valign="top">
-					<div class="borderskills">
-						<td data-aos="slide-right">
-							<h2 class="skills-subheading">Languages</h2>
-							<p class="detailedSkills">
-								Core Java, C, C++, Python, C#, JavaScript, HTML, CSS, SQL, PHP.
-							</p>
-						</td>
-					</div>
-					<div class="borderskills">
-						<td data-aos="slide-left">
-							<h2 class="skills-subheading">API's & Frameworks</h2>
-							<p class="detailedSkills">
-								Collections, Streams API, RestAPI, Spring, Hibernates, Servelets,
-								JDBC, SpringBoot, Spring MVC, JSP, ReactJS.
-							</p>
-						</td>
-					</div>
-				</tr>
 
-				<tr align="center" valign="top">
-					<div class="borderskills">
-						<td data-aos="slide-right">
-							<h2 class="skills-subheading">Tools</h2>
-							<p class="detailedSkills">
-								VS Code, Eclipse IDE, Netbeans, Git, Github, MySql Workbench,
-								Maven, Tomcat, MongoDB, Android Studio.
-							</p>
-						</td>
-					</div>
-					<div class="borderskills">
-						<td data-aos="slide-left">
-							<h2 class="skills-subheading">Operating Systems</h2>
-							<p class="detailedSkills">
-								Windows, Android, IOS, Linux, Ubuntu.
-							</p>
-						</td>
-					</div>
-				</tr>
-			</table>
-		</section>
+
 
 		<section id="projects" class="portfolio-sections project-section">
 			<h1 class="heading">PROJECTS</h1>
@@ -166,19 +161,85 @@
 						</div>
 					</div>
 					<div class="card" data-aos="flip-down">
-						<img src="..." class="card-img-top" alt="...">
+						<img src="https://149501111.v2.pressablecdn.com/wp-content/uploads/2022/07/Zoo-Management-System.webp"
+							class="card-img-top" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-								additional content. This card has even longer content than the first to show that equal
-								height action.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							<h5 class="card-title">ZooMaster</h5>
+							<p class="card-text">
+								Project on "ZooMaster" using PHP, MySQL (XAMPP). Designed a zoo management system to
+								streamline operations and enhance visitor experience. Includes modules for
+								administrators to manage animal records, feeding times, and veterinary appointments.
+								Visitors can explore the zoo map, learn about animals, and view events. Aims to promote
+								wildlife conservation and education.
+							</p>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
+
+		<section id="qualification" class="portfolio-sections qualification-section">
+			<div class="container">
+				<h1 class="heading">Qualification</h1>
+				<table>
+					<thead>
+						<tr>
+							<th>Degree</th>
+							<th>University/Board</th>
+							<th>School/Institute</th>
+							<th>Specialization</th>
+							<th>Marks (%)/ CGPA</th>
+							<th>Year of Passing</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10th</td>
+							<td>Maharashtra Board</td>
+							<td>Sulakhe High School, Barshi.</td>
+							<td>Not Applicable</td>
+							<td>88.40%</td>
+							<td>2017</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>Maharashtra Board</td>
+							<td>Shri Shivaji College, Barshi.</td>
+							<td>Science</td>
+							<td>60.15%</td>
+							<td>2019</td>
+						</tr>
+						<tr>
+							<td>BCA</td>
+							<td>Solapur University</td>
+							<td>B.P. Sulakhe Commerce College, Barshi.</td>
+							<td>Computer Application</td>
+							<td>79.15</td>
+							<td>2022</td>
+						</tr>
+						<tr>
+							<td>MCA</td>
+							<td>SPPU</td>
+							<td>Suryadatta Group of Institute</td>
+							<td>Computer Application</td>
+							<td>8.0</td>
+							<td>2024</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>Degree</th>
+							<th>University/Board</th>
+							<th>School/Institute</th>
+							<th>Specialization</th>
+							<th>Marks (%)/ CGPA</th>
+							<th>Year of Passing</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</section>
+
 
 		<section id="contact" class="portfolio-sections">
 			<h1 class="heading">CONTACT</h1>
@@ -187,8 +248,10 @@
 					<ul class="contact-info" type="none">
 						<li>varadkarykarte187@gmail.com</li>
 						<li>9876543210</li>
-						<li><a href="#">varad/github</a></li>
-						<li>varad/Linkden</li>
+						<li><a href="https://github.com/varad-18" target="_blank">Varad/https://github.com/varad-18</a>
+						</li>
+						<li><a href="https://www.linkedin.com/in/varad-karyakarte-7486bb259/"
+								target="_blank">varad/Linkden</a> </li>
 						<li>Pune, Maharashtra.</li>
 					</ul>
 				</div>
@@ -224,6 +287,13 @@
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
+
+		function openResume() {
+			window.open('Demo.pdf', '_blank');
+		}
+
+
+
 		AOS.init({
 			duration: 1500
 		});

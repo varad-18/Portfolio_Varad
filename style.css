@@ -9,25 +9,35 @@ html {
 
 .portfolio-sections {
 	margin-top: 50px;
-	/* height: 400px; */
 	width: 100%;
-	/* border: 2px solid black; */
 	background-color: white;
+	padding: 20px;
+	/* Added padding for better spacing */
+	border-radius: 8px;
+	/* Added rounded corners for a modern look */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Added a subtle shadow for depth */
 }
 
 .navigation-bar {
-	background-color: lightcyan;
+	background-color: rgba(173, 216, 230, 0.8);
+	/* Used rgba for a transparent background with color */
 	position: fixed;
 	top: 0;
 	width: 100%;
-	/*background-color: transparent;*/
 	backdrop-filter: blur(10px);
 	z-index: 1;
-
+	padding: 10px 0;
+	/* Added padding for better spacing */
 }
 
 .portfolio-sections h1 {
-	margin-top: 50px;
+	margin-top: 0;
+	/* Remove extra margin from the top */
+	font-size: 24px;
+	/* Decreased font size for better hierarchy */
+	margin-bottom: 20px;
+	/* Added margin at the bottom for spacing */
 }
 
 .main-container {
@@ -48,12 +58,76 @@ html {
 	font-family: sans-serif;
 	font-weight: bolder;
 	padding-left: 15px;
+	transition: text-decoration 0.3s;
+	/* Added transition for smoother hover effect */
 }
 
 .navmenu:hover {
-	text-decoration: underline 2px solid black;
+	text-decoration: underline;
 	text-underline-offset: 6px;
-	transition-duration: 2s;
+}
+
+.home-section {
+	height: 500px;
+	width: 100%;
+	position: relative;
+	/* Added relative positioning for absolute positioning of home-info */
+}
+
+#home {
+	background-image: url("https://miro.medium.com/v2/resize:fit:640/format:webp/1*ZSVmWGcc1weENb0ShawWxw.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* Changed background-size to cover for better responsiveness */
+	background-position: center;
+	/* Centered the background image */
+	border: none;
+	position: relative;
+	/* Added relative positioning for z-index */
+}
+
+#home-info {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	/* Changed margin-left to left for consistent positioning */
+	width: 400px;
+	font-size: 25px;
+	margin-top: 25px;
+	/*margin-left: 60px;*/
+	/* Removed margin-left to prevent overlapping */
+	z-index: 1;
+	/* Added z-index to keep the text above the background image */
+}
+
+.info {
+	font-weight: bolder;
+}
+
+.desig {
+	font-size: 30px;
+	color: crimson;
+	font-weight: bolder;
+}
+
+.rsmbtn {
+	height: 50px;
+	width: 100px;
+	border: none;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bolder;
+	background-color: skyblue;
+	color: white;
+	transition-duration: 1s;
+}
+
+.rsmbtn:hover {
+	background-color: white;
+	color: skyblue;
+	border: 3px solid skyblue;
+	transform: scale(1.1);
 }
 
 .home-section {
@@ -150,185 +224,289 @@ html {
 /*About Section starts here: */
 
 .about-section {
-	height: 500px;
+	height: 100%;
 	width: 100%;
-	background-color: whitesmoke;
-	border: none;
-}
-
-.aboutmain {
-	height: 500px;
-	width: 100%;
+	background-color: #f8f9fa;
+	/* Soft light gray background */
 	display: flex;
-	font-size: 25px;
-	font-family: sans-serif;
-	font-weight: bolder;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+	border: 2px solid #dee2e6;
+	/* Light border color */
+	border-radius: 10px;
+	/* Slight border radius */
 }
 
-.aboutmain div {
-	height: 500px;
-	width: 50%;
+.about-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.about-image {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .myimg {
-	margin-top: 100px;
-	margin-left: 90px;
-	animation-duration: 4s;
-	animation-name: zoom;
-	animation-iteration-count: 1;
+	max-width: 100%;
+	max-height: 400px;
+	border-radius: 8px;
+	/* Slightly rounded corners */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Subtle shadow */
 }
 
-@keyframes zoom {
-	100% {
-		transform: scale(1.2);
-		border-radius: 60px;
-	}
+.about-info {
+	flex: 1;
+	padding: 0 20px;
 }
 
 .heading {
-	font-family: Arial black;
+	font-family: 'Arial Black', sans-serif;
 	text-align: center;
 	margin: 30px 0;
-	font-size: 40px;
+	font-size: 50px;
 	color: crimson;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.heading:hover {
+	color: #800000;
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
 
 .carrerobj {
-	padding: 30px;
-}
-
-.carrerinfo {
 	text-align: justify;
-	line-height: 40px;
-	text-indent: 100px;
-	margin-right: 30px;
+	line-height: 1.6;
+	color: #6c757d;
+	/* Slightly darker text color */
+	font-size: 18px;
 }
 
-/* Skills Section Starts Here: */
 
-#skills {
-	height: 660px;
-	width: 100%;
-	background-color: white;
+/* Skills Section Starts Here */
+
+.skills-section {
+	padding: 50px 0;
+	background-color: #f8f9fa;
+	/* Soft light gray background */
 }
 
-.tbl {
-	margin-left: 5%;
-	border-collapse: separate;
-	border-spacing: 10px;
+.skill-categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 40px;
 }
 
-.tbl tr td {
-	padding: 40px;
+.skill-category {
+	width: calc(50% - 20px);
+	/* Two columns layout with some space in between */
+	margin-bottom: 40px;
+	padding: 20px;
+	background-color: #fff;
+	/* White background for each skill category */
 	border-radius: 10px;
-	box-shadow: 0px 0px 5px grey;
-	transition-duration: 1.5s;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	/* Subtle shadow */
+	transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+	transform: translateY(-5px);
+	/* Lift up the skill category on hover */
 }
 
 .skills-subheading {
 	text-align: center;
-	color: darkcyan;
-	font-family: sans-serif;
-	font-weight: bolder;
-	font-size: 25px;
-	font-variant: small-caps;
+	color: #007bff;
+	/* Blue color for headings */
+	font-family: 'Arial Black', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .detailedSkills {
-	font-size: 20px;
-	font-weight: bolder;
-	color: brown;
-	line-height: 40px;
-	word-spacing: 3px;
-	margin-top: 20px;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #343a40;
+	/* Dark text color */
 }
+
+
 
 /* Project Section Starts Here */
 #projects {
-	height: 800px;
+	height: auto;
+	/* Adjust height automatically based on content */
 	width: 100%;
-	padding: 10px;
+	padding: 20px;
+	/* Increase padding for better spacing */
 }
 
 .card-container {
-	padding: 20px;
-	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	/* Add gap between cards */
 }
 
-.card-title:hover {
-	text-decoration: underline 2px royalblue;
-	text-underline-offset: 5px;
+.card {
+	width: 300px;
+	/* Set fixed width for each card */
+	background-color: #f8f9fa;
+	/* Light background color */
+	border: 1px solid #dee2e6;
+	/* Add border around each card */
+	border-radius: 8px;
+	/* Add border radius for rounded corners */
+	overflow: hidden;
+	/* Hide overflow content */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Add subtle box shadow for depth */
+	transition: transform 0.3s ease;
+	/* Add transition for smoother hover effect */
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	/* Apply slight lift on hover */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	/* Add more pronounced shadow on hover */
 	cursor: pointer;
 }
 
-/* .card:hover {
-	transform: scale(1.1);
-	box-shadow: grey;
-} */
+.card img {
+	width: 100%;
+	/* Make images responsive */
+	height: 200px;
+	/* Set fixed height for images */
+	object-fit: cover;
+	/* Ensure images cover entire space */
+}
+
+.card-body {
+	padding: 20px;
+	/* Add padding to card body */
+}
 
 .card-title {
 	text-align: center;
-	color: royalblue;
-	font-family: sans-serif;
-	font-weight: bolder;
-	font-size: 30px;
-	font-variant: small-caps;
+	color: #007bff;
+	/* Change title color to a blue shade */
+	font-family: Arial, sans-serif;
+	/* Change font family */
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 10px;
+	/* Add space below title */
 }
 
 .card-text {
-	text-align: justify;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+	
 }
+
+/* Acdemic-Section */
+.qualification-section {
+	margin: 30px auto;
+	background-color: whitesmoke;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.qualification-section table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.qualification-section th,
+.qualification-section td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+}
+
+.qualification-section th {
+	background-color: #f0f0f0;
+	color: #333;
+}
+
 
 /* Contact-Section */
 #contact {
-	height: 500px;
+	height: auto;
 	width: 100%;
-	background-color: whitesmoke;
-	padding: 20px;
+	background-color: #f2f2f2;
+	padding: 50px 0;
+	text-align: center;
 }
 
 .contact-container {
-	height: 400px;
-	width: 80%;
 	display: flex;
-	margin-left: 10%;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	/* Add gap between contact elements */
 }
 
 .contact-child {
-	height: 400px;
-	width: 50%;
+	flex: 1;
+	/* Make child elements expand to fill available space */
 }
 
 .contact-info {
 	font-size: 18px;
-	font-family: sans-serif;
-	font-weight: bolder;
-	margin-top: 70px;
+	font-family: Arial, sans-serif;
+	/* Change font family for better readability */
+	font-weight: bold;
+	margin-top: 20px;
+	/* Reduce top margin for better alignment */
 }
 
-.contact-info li{
+.contact-info li {
 	margin-top: 10px;
 }
 
-.contact-form{
-	padding: 15px;
-	padding-left: 70px;
+.contact-form {
+	padding: 0 20px;
+	/* Add horizontal padding for form */
 	margin-top: 50px;
 }
 
-#footer{
+/* Footer */
+#footer {
 	height: 50px;
 	width: 100%;
-	background-color: darkcyan;
+	background-color: #007bff;
+	/* Change footer background color */
 	text-align: center;
+	color: #fff;
+	/* White text color */
+	line-height: 50px;
+	/* Center align text vertically */
 }
 
-#footer-info{
-	font-size: 20px;
-	line-height: 50px;
-	color: aliceblue;
+#footer-info {
+	font-size: 16px;
+	/* Reduce font size for footer */
 }
+
 
 
 
